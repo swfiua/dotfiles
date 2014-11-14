@@ -1,0 +1,44 @@
+
+set meta-flag on
+set convert-meta on
+set output-meta off
+set mark-directories on
+set show-all-if-ambiguous on
+
+set show-all-if-ambiguous on
+
+"\eOd": backward-word
+"\eOc": forward-word
+
+# for linux console
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[5~": beginning-of-history
+"\e[6~": end-of-history
+"\e[3~": delete-char
+"\e[2~": quoted-insert
+
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+"\C-n":  history-search-forward
+"\M-OB": history-search-forward
+"\M-[B": history-search-forward
+"\C-p":  history-search-backward
+"\M-OA": history-search-backward
+"\M-[A": history-search-backward
+
+# for xterm
+"\eOH": beginning-of-line
+"\eOF": end-of-line
+
+#for freebsd console
+"\e[H": beginning-of-line
+"\e[F": end-of-line
+
+# # now some of my stuff
+Meta-RET: " | less "
+Meta-RETURN: " | less "
+Meta-#: re-read-init-file
+"\C-[OP":   "!!"
+
