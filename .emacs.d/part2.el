@@ -55,7 +55,6 @@
 
 ;; function keys
 (global-set-key [f1] 'compile)
-(global-set-key [M-f1] 'mycompile)
 (global-set-key [C-f1] 'next-error)
 (global-set-key [f3] 'save-buffer)
 (global-set-key [M-f3] 'ps-print-buffer-with-faces)
@@ -113,20 +112,11 @@
 
 ;; windows is killing me
 (global-set-key "\C-v" 'yank)
-;;(require 'mercurial)
 
 ;; make text-mode more interesting
 (add-hook 'text-mode-hook
 	  (function (lambda ()
 		      (auto-fill-mode t))))
-
-;; for shell and perl modes hydro seems to screw up so..
-;;(add-hook 'sh-mode-hook
-;;	  (function (lambda ()
-;;		      (local-set-key "\C-m" 'newline-and-indent))))
-;;(add-hook 'perl-mode-hook
-;;	  (function (lambda ()
-;;		      (local-set-key "\C-m" 'newline-and-indent))))
 
 ;; c-mode fixes
 (add-hook 'c-mode-hook
@@ -137,19 +127,6 @@
 	  (function (lambda ()
 		      (local-set-key "\C-m" 'newline-and-indent))))
 
-;; add font-lock to java
-(add-hook 'java-mode-hook
-	  '(lambda () (make-local-variable 'font-lock-defaults)
-	     (make-local-variable 'font-lock-comment-start-regexp)
-	     (setq font-lock-comment-start-regexp "/[*/]")
-	     (setq font-lock-defaults 
-		   '((c++-font-lock-keywords c++-font-lock-keywords-1 
-					     c++-font-lock-keywords-2
-					     c++-font-lock-keywords-3)
-		     nil nil ((?_ . "w") (?~ . "w")) beginning-of-defun
-		     (font-lock-comment-start-regexp . "/[*/]")
-
-		     (font-lock-mark-block-function . mark-defun)))))
 
 ;; org mode
 (add-hook 'org-mode-hook
@@ -170,33 +147,8 @@
 (autoload 'python-mode "python" "Python editing mode." t)
 
 
-;;(define-key py-mode-map "\M--" 'anything-ipython-complete)
-;;(define-key py-shell-map "\M--" 'anything-ipython-complete)
-;;(define-key py-mode-map (kbd "C-c M") 'anything-ipython-import-modules-from-buffer)
-
 (require 'tramp)
 (require 'python-pep8)
-
-;; fix comint stuff to use arrow keys to move back in history
-(require 'comint)
-(define-key comint-mode-map (kbd "M-") 'comint-next-input)
-(define-key comint-mode-map (kbd "M-") 'comint-previous-input)
-(define-key comint-mode-map [down] 'comint-next-matching-input-from-input)
-(define-key comint-mode-map [up] 'comint-previous-matching-input-from-input)
-
-;; pylookup
-(autoload 'pylookup-lookup "pylookup")
-(autoload 'pylookup-update "pylookup")
-(setq pylookup-program "~/emacs/pylookup/pylookup.py")
-(setq pylookup-db-file "~/emacs/pylookup/pylookup.db")
-(global-set-key "\C-ch" 'pylookup-lookup)
-
-;; autopair
-;;(autoload 'autopair-global-mode "autopair" nil t)
-;;(autopair-global-mode)
-
-;; ampl mode
-(autoload 'ampl-mode "ampl-mode" "Ampl editing mode." t)
 
 (add-hook 'python-mode-hook
 	  (lambda ()
@@ -208,56 +160,6 @@
                     (list #'autopair-default-handle-action
                           #'autopair-python-triple-quote-action))))
 
-
-;;(require 'pymacs)
-;;(pymacs-load "ropemacs" "rope-")
-
-
-;; pymacs
-;;(autoload 'pymacs-load "pymacs" nil t)
-;;(autoload 'pymacs-eval "pymacs" nil t)
-;;(autoload 'pymacs-apply "pymacs")
-;;(autoload 'pymacs-call "pymacs")
-;;(pymacs-load "bikeemacs" "brm-")
-;;(brm-init)
-;;(eval-after-load "pymacs"
-;;  '(add-to-list 'pymacs-load-path "/home/jng/emacs"))
-
-;; (add-hook 'python-mode-hook
-;; 	  (function (lambda ()
-;; 		      (modify-syntax-entry "_" "_"))))
-;;(load-library "pdb.el")
-
-;; 
-;; (load "emacs-wiki")
-;; (load "hiki-mode")
-;; (setq hiki-site-list '(("Renre" "http://marsh.europe.renre.com/renrewiki")))
-;; (setq hiki-browser-function 'browse-url)
-;; (autoload 'hiki-edit "hiki-mode" nil t)
-;; (autoload 'hiki-edit-url "hiki-mode" nil t)
-
-;; Dired-x -- note do this after key binding so we pick up any find-file's
-(add-hook 'dired-load-hook
-	  (function (lambda ()
-		      (load "dired-x")
-		      ;; Set dired-x global variables here.  For example:
-		      ;; (setq dired-guess-shell-gnutar "gtar")
-		      (setq dired-x-hands-off-my-keys nil)
-		      ;; Make sure our binding preference is invoked.
-		      (dired-x-bind-find-file))))
-
-(add-hook 'dired-mode-hook
-	  (function (lambda ()
-		      ;; Set dired-x buffer-local variables here.  For example:
-		      ;; (setq dired-omit-files-p t)
-		      )))
-
-;; load bazaar version control
-(load "vc-bzr")
-
-;;(load-file "~/emacs/dvc/build/dvc-load.el")
-;;(load-file "~/emacs/dvc/++build/dvc-load.el")
-
 ;; desktop stuff
 (setq safe-local-variable-values (quote ((py-indent-offset . 4))))
 (load "desktop")
@@ -266,31 +168,17 @@
 ;; when it reloads)
 (setq desktop-buffers-not-to-save
  "\\(^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS\\|^RMAIL.*\\)$")
-;;(desktop-load-default)
-;;(desktop-save-mode)
-;;(desktop-read)
+
+
 (add-hook 'kill-emacs-hook
 	  '(lambda ()
 	     (desktop-truncate search-ring 3)
 	     (desktop-truncate regexp-search-ring 3)))
 
-;;(pymacs-load "pymacs.hello" "hello-")
-;;(add-hook 'desktop-save-hook 'hello-cull-buffers)
-	  
-;; start up calendar/diary
-;; (calendar)
-;;(add-hook 'diary-hook 'appt-make-list)
-;;(diary)
 (display-time)
 
 ;; set up so we can use emacsclient
 (server-start)
-
-;; jabber
-;;(require 'jabber)
-;;(require 'erc)
-;;(require 'erc-highlight-nicknames)
-;;(setq erc-password "jng:snowyg:ferrari")
 
 ;; turn on iswitchb-mode
 (iswitchb-mode)
