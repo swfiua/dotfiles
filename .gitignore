@@ -54,7 +54,7 @@ docs/_build/
 target/
 
 # emacs sub-folder
-emacs/session.*
+.emacs.d/session.*
 
 *~
 \#*\#
@@ -74,7 +74,7 @@ tramp
 
 
 # elpa packages
-emacs/elpa/
+.emacs.d/elpa/
 
 # reftex files
 *.rel
