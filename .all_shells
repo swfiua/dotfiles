@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#
+# Stuff for all shells, separated here so it can be sourced in .gnomerc, .bash_profile etc
+#
+
+export EDITOR=vim
+export BROWSER=google-chrome
+
+# unset PROMPT_COMMAND 'cos default ubuntu messes up
+# setting of gnome-terminal titles
+unset PROMPT_COMMAND
+
+SCREENDIR=$HOME/.screen
