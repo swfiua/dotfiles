@@ -12,3 +12,8 @@ export BROWSER=google-chrome
 unset PROMPT_COMMAND
 
 SCREENDIR=$HOME/.screen
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
