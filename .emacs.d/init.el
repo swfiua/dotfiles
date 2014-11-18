@@ -70,12 +70,13 @@
 (load "~/.emacs.d/part2.el")
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["white" "red" "green" "yellow" "white" "magenta" "cyan" "black"])
  '(blink-cursor-mode nil)
+ '(browse-url-browser-function (quote browse-url-xdg-open))
  '(browse-url-firefox-startup-arguments (quote ("")))
  '(case-fold-search t)
  '(clean-buffer-list-delay-general 4)
@@ -105,9 +106,9 @@
  '(vc-handled-backends (quote (Bzr RCS CVS SVN SCCS Git Hg Mtn Arch))))
 
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(rst-level-1-face ((t (:background "grey40"))) t)
  '(rst-level-2-face ((t (:background "grey40"))) t))
