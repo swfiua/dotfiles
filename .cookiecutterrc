@@ -1,0 +1,9 @@
+default_context:
+    full_name: "Johnny Gill"
+    email: "swfiua@gmail.com"
+    github_username: "swfiua"
+cookiecutters_dir: "/home/jng/Devel/cookiecutter"
+abbreviations:
+    pp: https://github.com/audreyr/cookiecutter-pypackage.git
+    gh: https://github.com/{0}.git
+    bb: https://bitbucket.org/{0}
