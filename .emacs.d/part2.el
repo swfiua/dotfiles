@@ -90,6 +90,16 @@
 (global-set-key [down-mouse-2] 'mouse-drag-drag)
 ;; ;;(setq mouse-throw-with-scroll-bar t)
 
+;; multiple cursors
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+;; When you want to add multiple cursors not based on continuous lines, but based on
+;; keywords in the buffer, use:
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 ;; magic wheel mouse stuff
 (defun up-slightly () (interactive) (scroll-up 5))
 (defun down-slightly () (interactive) (scroll-down 5))
@@ -111,7 +121,8 @@
 (global-set-key [C-f11] 'svn-status)
 
 ;; windows is killing me
-(global-set-key "\C-v" 'yank)
+;;(global-set-key "\C-v" 'yank)
+(global-set-key "\C-v" 'scroll-up-command)
 
 ;; make text-mode more interesting
 (add-hook 'text-mode-hook

@@ -13,7 +13,7 @@
 
 (require 'rst)
 (require 'twittering-mode)
-
+(require 'multiple-cursors)
 
 (setq default-frame-alist '(
 			    ;; (font . "Bitstream Vera Sans Mono-9") 
@@ -96,7 +96,7 @@
  '(lpr-page-header-switches (quote ("-l 66")))
  '(midnight-mode t nil (midnight))
  '(msb-mode t nil (msb))
- '(org-agenda-files (quote ("~/personal/hols.org" "~/todo.org")))
+ '(org-agenda-files (quote ("~/personal/hols.org" "~/todo.org" "~/Devel/TODO/travel.org")))
  '(py-indent-offset 4)
  '(scroll-bar-mode (quote right))
  '(speedbar-activity-change-focus-flag t)
