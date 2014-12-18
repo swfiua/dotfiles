@@ -70,7 +70,7 @@
 (load "~/.emacs.d/part2.el")
 
 ;; bbdb init
-(load "~/.emacs.d/bbdb.el")
+;; (load "~/.emacs.d/bbdbinit.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
