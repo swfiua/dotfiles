@@ -192,5 +192,5 @@
 (server-start)
 
 ;; turn on iswitchb-mode
-(iswitchb-mode)
+(ido-mode)
 
