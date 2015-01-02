@@ -1,10 +1,10 @@
 xterm*iconName:Terminal
 xterm*eightBitInput:    false
-xterm*cursorBlink:      true
+xterm*cursorBlink:      false
 xterm*faceName: Monospace
 xterm*cursorOffTime:    300
 xterm*metaSendsEscape:  true
-xterm*faceSize: 8
+xterm*faceSize: 11
 xterm*Background:     #000000
 xterm*title:    Terminal
 xterm*cursorOnTime:     300
