@@ -98,6 +98,7 @@
  '(latex-run-command "pdflatex")
  '(lpr-page-header-switches (quote ("-l 66")))
  '(midnight-mode t nil (midnight))
+ '(mm-text-html-renderer (quote w3m))
  '(msb-mode t nil (msb))
  '(org-agenda-files (quote ("~/personal/hols.org" "~/todo.org" "~/Devel/TODO/travel.org")))
  '(py-indent-offset 4)
