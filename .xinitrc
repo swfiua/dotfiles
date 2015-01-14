@@ -1,0 +1,2 @@
+xrdb -merge .Xdefaults
+awesome

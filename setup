@@ -1,0 +1,9 @@
+#!/bin/bash
+
+targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .emacs.d"
+
+for target in $targets
+do
+  rm -rf ~/$target
+  ln -s ~/dotfiles/$target ~
+done
