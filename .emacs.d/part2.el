@@ -194,3 +194,6 @@
 ;; turn on iswitchb-mode
 (ido-mode)
 
+;; dired-x for omit mode
+(add-hook 'dired-load-hook '(lambda () (require 'dired-x))) ; Load Dired X when Dired is loaded.
+(setq dired-omit-mode t) ; Turn on Omit mode.
