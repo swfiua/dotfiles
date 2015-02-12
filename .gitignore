@@ -85,3 +85,5 @@ tramp
 # cask packages
 .cask/
 
+/.emacs.d/.emacs.desktop
+/.emacs.d/.emacs.desktop.lock
