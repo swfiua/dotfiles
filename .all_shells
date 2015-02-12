@@ -9,7 +9,7 @@ export BROWSER=google-chrome
 
 # unset PROMPT_COMMAND 'cos default ubuntu messes up
 # setting of gnome-terminal titles
-unset PROMPT_COMMAND
+#unset PROMPT_COMMAND
 
 SCREENDIR=$HOME/.screen
 

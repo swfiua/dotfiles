@@ -1,0 +1,7 @@
+(require 'bbdb)
+(bbdb-initialize 'gnus 'message 'sc 'w3)
+(setq bbdb/news-auto-create-p t)
+(add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
+(add-hook 'gnus-startup-hook 'bbdb-insinuate-message) 
+;;(add-hook 'message-setup-hook 'bbdb-define-all-aliases) 
+;;(sams-bind-alias-tabs-in-gnus) 
