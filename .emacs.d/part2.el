@@ -65,7 +65,7 @@
 (global-set-key [f6] 'find-file)
 (global-set-key [C-f6] 'find-file-other-window)
 (global-set-key [f7] 'calendar)
-(global-set-key [f8] 'list-buffers)
+(global-set-key [f8] 'magit-status)
 (global-set-key [f9] 'undo)
 (global-set-key "\C-z" 'undo)
 (global-set-key [delete] 'delete-char)
