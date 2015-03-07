@@ -1,6 +1,6 @@
 #!/bin/bash
 
-targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .emacs.d"
+targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .emacs.d .xinitrc .gnus.el .Xdefaults"
 
 for target in $targets
 do
