@@ -5,6 +5,7 @@
 #
 
 export EDITOR=vim
+export LESS=-R
 export BROWSER=google-chrome
 
 # unset PROMPT_COMMAND 'cos default ubuntu messes up
