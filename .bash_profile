@@ -9,6 +9,6 @@ fi
 . .all_shells
 
 if [ "" == "$CYGWIN" ]; then
-    PATH=`uniquify $PATH:/sbin:/usr/sbin`
+    PATH=`uniquify $PATH:/sbin:/usr/sbin:~/bin`
 fi
 
