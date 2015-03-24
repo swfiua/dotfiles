@@ -201,3 +201,5 @@
 ;; have l work as go back in help mode
 (add-hook 'help-mode-hook
     (lambda () (define-key help-mode-map "l" 'help-go-back)))
+
+(setq ispell-dictionary "british")
