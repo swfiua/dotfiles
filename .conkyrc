@@ -70,7 +70,7 @@ default_outline_color white
 gap_x 13
 gap_y 13
 #alignment top_right
-alignment bottom_left
+alignment top_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
