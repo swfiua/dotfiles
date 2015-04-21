@@ -56,9 +56,6 @@ draw_borders no
 # Stippled borders?
 stippled_borders 10
 
-# border margins
-border_margin 4
-
 # border width
 border_width 1
 
