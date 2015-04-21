@@ -76,7 +76,7 @@ alignment bottom_left
 # Gap between borders of screen and text
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
-use_spacer no
+use_spacer none
 
 # Subtract file system buffers from used memory?
 no_buffers yes
@@ -205,8 +205,8 @@ ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
 ${color lightgrey}Networking:
- Down:${color #8844ee} ${downspeed eth0} k/s${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed eth0} k/s
-${color black}${downspeedgraph eth0 32,150 ff0000 0000ff} $alignr${color black}${upspeedgraph eth0 32,150 0000ff ff0000}
+ Down:${color #8844ee} ${downspeed wlan0} k/s${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed wlan0} k/s
+${color black}${downspeedgraph wlan0 32,150 ff0000 0000ff} $alignr${color black}${upspeedgraph wlan0 32,150 0000ff ff0000}
 ${color lightgrey}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar /}
 ${color lightgrey}Temperatures:
