@@ -37,7 +37,9 @@ set show-all-if-ambiguous on
 "\e[F": end-of-line
 
 # # now some of my stuff
-Meta-SPACE: " | less "
+Meta-SPACE: " | less "
 Meta-#: re-read-init-file
-"\C-[OP":   "!!"
+"\C-[OP":   "!!"
 
+# try another one
+"META-RETURN": " | less "
