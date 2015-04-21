@@ -23,7 +23,7 @@ use_xft yes
 xftfont Bitstream Vera Sans Mono:size=8
 
 own_window_transparent no
-own_window_colour hotpink
+own_window_colour black
 # Text alpha when using Xft
 xftalpha 0.8
 
