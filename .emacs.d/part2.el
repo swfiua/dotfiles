@@ -211,3 +211,8 @@
  				 (nnimap-address "imap.gmail.com")
  				 (nnimap-server-port 993)
  				 (nnir-search-engine imap)))
+
+
+;; ipython notebook
+(require 'ein)
+(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
