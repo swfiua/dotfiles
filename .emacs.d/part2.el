@@ -203,3 +203,16 @@
     (lambda () (define-key help-mode-map "l" 'help-go-back)))
 
 (setq ispell-dictionary "british")
+
+(require 'nnir)
+
+(add-to-list 'gnus-secondary-select-methods '(nnimap "gmail"
+				 (nnimap-stream ssl)
+ 				 (nnimap-address "imap.gmail.com")
+ 				 (nnimap-server-port 993)
+ 				 (nnir-search-engine imap)))
+
+
+;; ipython notebook
+(require 'ein)
+(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
