@@ -216,3 +216,6 @@
 ;; ipython notebook
 (require 'ein)
 (add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
+;; Standard Jedi.el setting
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
