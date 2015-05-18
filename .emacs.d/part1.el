@@ -92,6 +92,3 @@
 
 (my-reverse)
 
-;; bbdb init
-;; (load "~/.emacs.d/bbdbinit.el")
-
