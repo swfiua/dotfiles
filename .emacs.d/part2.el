@@ -92,7 +92,8 @@
 
 ;; multiple cursors
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-
+(global-set-key (kbd "C-s") 'phi-search)
+(global-set-key (kbd "C-r") 'phi-search-backward)
 ;; When you want to add multiple cursors not based on continuous lines, but based on
 ;; keywords in the buffer, use:
 
