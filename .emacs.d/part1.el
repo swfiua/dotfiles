@@ -21,6 +21,7 @@
 	key-chord lua-mode magit git-rebase-mode git-commit-mode
 	multiple-cursors popup pyflakes python-environment deferred
 	python-mode python-pep8 request twittering-mode w3 w3m websocket
+	phi-search
 	))
 
 (package-initialize)
