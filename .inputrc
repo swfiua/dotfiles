@@ -5,7 +5,6 @@ set output-meta off
 set mark-directories on
 set show-all-if-ambiguous on
 
-set show-all-if-ambiguous on
 
 "\eOd": backward-word
 "\eOc": forward-word
