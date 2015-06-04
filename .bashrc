@@ -61,6 +61,7 @@ alias rid="rm -f"
 alias pygrep="find -name '*.py' | xargs grep"
 alias o=xdg-open
 alias cdp='colordiff|less -R'
+alias stop="sudo shutdown -h now"
 
 function boldps
 {
