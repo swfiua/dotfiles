@@ -91,5 +91,6 @@
   (interactive "P")
   (x-handle-reverse-video (selected-frame) '((reverse . t))))
 
-(my-reverse)
+(if (display-graphic-p)
+    (my-reverse))
 
