@@ -217,6 +217,27 @@
 ;; ipython notebook
 (require 'ein)
 (add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
+
+
+;; Auto complete for ein
+(setq ein:use-auto-complete t)
+
+;; Or, to enable "superpack" (a little bit hacky improvements):
+;; (setq ein:use-auto-complete-superpack t)
+
+(add-hook 'ein:notebook-multilang-mode-hook ; For EIN
+	  '(lambda()
+	     (local-set-key (kbd "") 'ein:worksheet-execute-cell)
+	     (local-set-key (kbd "") 'ein:worksheet-execute-cell)
+	     (local-set-key (kbd "C-c a") 'ein:worksheet-insert-cell-above)
+	     (local-set-key (kbd "C-c b") 'ein:worksheet-insert-cell-below)
+	     (local-set-key (kbd "C-c k") 'ein:worksheet-kill-cell)
+	     (local-set-key (kbd "C-c w") 'ein:worksheet-copy-cell)
+	     (local-set-key (kbd "C-c y") 'ein:worksheet-yank-cell)
+	     (local-set-key (kbd "C-c p") 'ein:worksheet-goto-prev-input)
+	     (local-set-key (kbd "C-c n") 'ein:worksheet-goto-next-input)
+	     ))
+
 ;; Standard Jedi.el setting
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
