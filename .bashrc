@@ -63,6 +63,7 @@ alias o=xdg-open
 alias cdp='colordiff|less -R'
 alias stop="sudo shutdown -h now"
 
+
 function boldps
 {
     export PS1="\[\e[01;33m\]\u@\h \w>\n\[\e[01;33m\][\t]\[\e[00m\] "
@@ -122,6 +123,6 @@ function ep
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH:~/devel/scripts"
 alias aa=ack-grep
 alias pac="sudo pacman -S"
