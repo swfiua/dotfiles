@@ -35,6 +35,7 @@
      ("[0-9]+\\.tex\\'" flymake-master-tex-init flymake-master-cleanup)
      ("\\.idl\\'" flymake-simple-make-init))))
  '(global-font-lock-mode t nil (font-lock))
+ '(indent-tabs-mode nil)
  '(latex-run-command "pdflatex")
  '(midnight-mode t nil (midnight))
  '(mm-text-html-renderer (quote w3m))
