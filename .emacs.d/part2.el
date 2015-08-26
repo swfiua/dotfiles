@@ -216,7 +216,7 @@
 
 ;; ipython notebook
 (require 'ein)
-(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
+#(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
 
 
 ;; Auto complete for ein
