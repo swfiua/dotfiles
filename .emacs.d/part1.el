@@ -8,21 +8,18 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/"))
 
-(setq package-list
-      '(csharp-mode
-	git-commit-mode
-	git-commit-mode git-rebase-mode git-rebase-mode lua-mode lua-mode
-	magit git-rebase-mode git-commit-mode magit multiple-cursors
-	multiple-cursors python-mode python-mode yasnippet yasnippet
-	autopair bbdb-ext bbdb bbdb-vcard bbdb
-	bbdb2erc bbdb csharp-mode ein-mumamo ein request websocket
-	ipython jedi-direx direx jedi auto-complete popup jedi-core
-	python-environment deferred epc ctable concurrent deferred
-	key-chord lua-mode magit git-rebase-mode git-commit-mode
-	multiple-cursors popup pyflakes python-environment deferred
-	python-mode python-pep8 request twittering-mode w3 w3m websocket
-	phi-search
-	))
+(setq package-list '(csharp-mode git-commit-mode git-commit-mode
+      git-rebase-mode git-rebase-mode lua-mode lua-mode magit
+      git-rebase-mode git-commit-mode magit multiple-cursors
+      multiple-cursors python-mode python-mode yasnippet
+      yasnippet autopair bbdb-ext bbdb bbdb-vcard bbdb bbdb2erc
+      bbdb csharp-mode ein-mumamo ein request websocket ipython
+      direx auto-complete popup python-environment deferred epc
+      ctable concurrent deferred key-chord lua-mode magit
+      git-rebase-mode git-commit-mode multiple-cursors popup
+      pyflakes python-environment deferred python-mode
+      python-pep8 request twittering-mode w3 w3m websocket
+      phi-search ))
 
 (package-initialize)
 
