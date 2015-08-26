@@ -166,11 +166,11 @@
 	  (lambda ()
 	    (local-set-key "\C-m" 'newline-and-indent)))
 
-(add-hook 'python-mode-hook
-          #'(lambda ()
-              (setq autopair-handle-action-fns
-                    (list #'autopair-default-handle-action
-                          #'autopair-python-triple-quote-action))))
+;; (add-hook 'python-mode-hook
+;;    '(lambda ()
+;;       (setq autopair-handle-action-fns
+;; 	    (list 'autopair-default-handle-action
+;;		  'autopair-python-triple-quote-action))))
 
 ;; desktop stuff
 (setq safe-local-variable-values (quote ((py-indent-offset . 4))))
@@ -216,7 +216,7 @@
 
 ;; ipython notebook
 (require 'ein)
-#(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
+;;(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
 
 
 ;; Auto complete for ein
