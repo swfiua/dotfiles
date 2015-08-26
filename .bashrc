@@ -69,6 +69,11 @@ function boldps
     export PS1="\[\e[01;33m\]\u@\h \w>\n\[\e[01;33m\][\t]\[\e[00m\] "
 }
 
+function simpleps
+{
+    export PS1="\u@\h >"
+}
+
 function fp
 {
   find . -name "*${1}*" -print 
