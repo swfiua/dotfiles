@@ -14,29 +14,35 @@
       multiple-cursors python-mode python-mode yasnippet
       yasnippet autopair bbdb-ext bbdb bbdb-vcard bbdb bbdb2erc
       bbdb csharp-mode ein-mumamo ein request websocket ipython
-      direx auto-complete popup python-environment deferred epc
+      direx popup python-environment deferred epc
       ctable concurrent deferred key-chord lua-mode magit
       git-rebase-mode git-commit-mode multiple-cursors popup
       pyflakes python-environment deferred python-mode
       python-pep8 request twittering-mode w3 w3m websocket
       phi-search ))
 
+(setq package-list '(git-commit-mode git-commit-mode
+      git-rebase-mode git-rebase-mode lua-mode lua-mode magit
+      multiple-cursors python-mode bbdb-ext bbdb bbdb-vcard bbdb
+      bbdb2erc bbdb ein-mumamo ein request websocket ipython
+      direx popup python-environment deferred epc ctable
+      concurrent  pyflakes python-pep8 w3 w3m phi-search))
+
 (package-initialize)
 
-; fetch the list of packages available 
+;; fetch the list of packages available 
 (unless package-archive-contents
   (package-refresh-contents))
-
-; install the missing packages
+ 
+;; install the missing packages
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
 
-
 ;; restructured text mode
-
 (require 'rst)
-(require 'twittering-mode)
+
+;;(require 'twittering-mode)
 (require 'multiple-cursors)
 
 (setq default-frame-alist '(
