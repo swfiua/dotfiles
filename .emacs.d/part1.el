@@ -8,19 +8,6 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/"))
 
-(setq package-list '(csharp-mode git-commit-mode git-commit-mode
-      git-rebase-mode git-rebase-mode lua-mode lua-mode magit
-      git-rebase-mode git-commit-mode magit multiple-cursors
-      multiple-cursors python-mode python-mode yasnippet
-      yasnippet autopair bbdb-ext bbdb bbdb-vcard bbdb bbdb2erc
-      bbdb csharp-mode ein-mumamo ein request websocket ipython
-      direx popup python-environment deferred epc
-      ctable concurrent deferred key-chord lua-mode magit
-      git-rebase-mode git-commit-mode multiple-cursors popup
-      pyflakes python-environment deferred python-mode
-      python-pep8 request twittering-mode w3 w3m websocket
-      phi-search ))
-
 (setq package-list '(git-commit-mode git-commit-mode
       git-rebase-mode git-rebase-mode lua-mode lua-mode magit
       multiple-cursors python-mode bbdb-ext bbdb bbdb-vcard bbdb
@@ -38,6 +25,9 @@
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
+
+;; load theme
+(load-theme 'deeper-blue)
 
 ;; restructured text mode
 (require 'rst)
@@ -94,6 +84,6 @@
   (interactive "P")
   (x-handle-reverse-video (selected-frame) '((reverse . t))))
 
-(if (display-graphic-p)
-    (my-reverse))
+;;(if (display-graphic-p)
+;;    (my-reverse))
 
