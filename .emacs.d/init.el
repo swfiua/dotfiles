@@ -23,6 +23,7 @@
  '(desktop-save-mode t)
  '(dired-recursive-deletes t)
  '(display-time-mode t)
+ '(ein:complete-on-dot nil)
  '(flymake-allowed-file-name-masks
    (quote
     (("\\.py\\'" flymake-pyflakes-init)
