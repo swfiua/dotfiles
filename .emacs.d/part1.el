@@ -13,7 +13,7 @@
       multiple-cursors python-mode bbdb-ext bbdb bbdb-vcard bbdb
       bbdb2erc bbdb ein-mumamo ein request websocket ipython
       direx popup python-environment deferred epc ctable
-      concurrent  pyflakes python-pep8 w3 w3m phi-search))
+      concurrent  pyflakes python-pep8 w3 w3m))
 
 (package-initialize)
 
