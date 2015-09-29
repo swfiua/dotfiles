@@ -8,10 +8,10 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/"))
 
-(setq package-list '(git-commit-mode git-commit-mode
-      git-rebase-mode git-rebase-mode lua-mode lua-mode magit
+(setq package-list '(git-commit 
+      lua-mode magit gh
       multiple-cursors python-mode bbdb-ext bbdb bbdb-vcard bbdb
-      bbdb2erc bbdb ein-mumamo ein request websocket ipython
+      bbdb2erc  ein-mumamo ein request websocket ipython
       direx popup python-environment deferred epc ctable
       concurrent  pyflakes python-pep8 w3 w3m))
 
