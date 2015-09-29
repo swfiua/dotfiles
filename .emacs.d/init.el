@@ -26,6 +26,9 @@
  '(dired-recursive-deletes t)
  '(display-time-mode t)
  '(ein:complete-on-dot nil)
+ '(elfeed-feeds
+   (quote
+    ("http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
  '(flymake-allowed-file-name-masks
    (quote
     (("\\.py\\'" flymake-pyflakes-init)
