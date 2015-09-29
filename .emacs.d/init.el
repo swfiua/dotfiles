@@ -1,3 +1,5 @@
+;;(setq debug-on-error t)
+
 ;; load part 1 of initialisation
 (load "~/.emacs.d/part1.el")
 
