@@ -17,7 +17,7 @@
  '(ansi-color-names-vector
    ["white" "red" "green" "yellow" "white" "magenta" "cyan" "black"])
  '(blink-cursor-mode nil)
- '(browse-url-browser-function (quote browse-url-xdg-open))
+ '(browse-url-browser-function (quote browse-url-w3))
  '(browse-url-firefox-startup-arguments (quote ("")))
  '(case-fold-search t)
  '(delete-selection-mode t nil (delsel))
@@ -28,7 +28,7 @@
  '(ein:complete-on-dot nil)
  '(elfeed-feeds
    (quote
-    ("http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
+    ("https://bermudaweather.wordpress.com/feed/" "http://peakrisk.github.io/peakrisk/rss.xml" "http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
  '(flymake-allowed-file-name-masks
    (quote
     (("\\.py\\'" flymake-pyflakes-init)
