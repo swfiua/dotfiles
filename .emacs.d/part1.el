@@ -87,3 +87,11 @@
 ;;(if (display-graphic-p)
 ;;    (my-reverse))
 
+(defun details()
+  (interactive)
+  (setq user-mail-address "john@details.bm"))
+
+(defun swfiua()
+  (interactive)
+  (setq user-mail-address "swfiua@gmail.com"))
+  
