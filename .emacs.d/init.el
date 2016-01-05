@@ -28,7 +28,7 @@
  '(ein:complete-on-dot nil)
  '(elfeed-feeds
    (quote
-    ("http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
+    ("http://blog.raymond.burkholder.net/index.php?/feeds/index.rss2" "http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
  '(flymake-allowed-file-name-masks
    (quote
     (("\\.py\\'" flymake-pyflakes-init)
