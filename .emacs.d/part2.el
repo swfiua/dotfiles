@@ -157,8 +157,8 @@
 (autoload 'python-mode "python" "Python editing mode." t)
 
 
-(require 'tramp)
-(require 'python-pep8)
+;;(require 'tramp)
+;;(require 'python-pep8)
 
 (add-hook 'python-mode-hook
 	  (lambda ()
