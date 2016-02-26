@@ -90,14 +90,6 @@
 (global-set-key [down-mouse-2] 'mouse-drag-drag)
 ;; ;;(setq mouse-throw-with-scroll-bar t)
 
-;; multiple cursors
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-;; When you want to add multiple cursors not based on continuous lines, but based on
-;; keywords in the buffer, use:
-
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; magic wheel mouse stuff
 (defun up-slightly () (interactive) (scroll-up 5))
@@ -128,15 +120,6 @@
 	  (function (lambda ()
 		      (auto-fill-mode t))))
 
-;; c-mode fixes
-(add-hook 'c-mode-hook
-	  (function (lambda ()
-		      (setq c-electric-pound-behavior '(alignleft))
-		      (local-set-key "\C-m" 'newline-and-indent))))
-(add-hook 'c++-mode-hook
-	  (function (lambda ()
-		      (local-set-key "\C-m" 'newline-and-indent))))
-
 
 ;; org mode
 (add-hook 'org-mode-hook
@@ -159,10 +142,6 @@
 
 ;;(require 'tramp)
 ;;(require 'python-pep8)
-
-(add-hook 'python-mode-hook
-	  (lambda ()
-	    (local-set-key "\C-m" 'newline-and-indent)))
 
 ;; (add-hook 'python-mode-hook
 ;;    '(lambda ()

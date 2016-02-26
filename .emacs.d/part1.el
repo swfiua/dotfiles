@@ -10,7 +10,7 @@
 
 (setq package-list '(git-commit 
       lua-mode magit gh
-      multiple-cursors python-mode bbdb-ext bbdb bbdb-vcard bbdb
+      python-mode bbdb-ext bbdb bbdb-vcard bbdb
       bbdb2erc  ein-mumamo ein request websocket ipython
       direx popup python-environment deferred epc ctable
       concurrent  pyflakes python-pep8 w3 w3m))
