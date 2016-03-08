@@ -26,7 +26,7 @@
 ;;Tell bbdb about your email address:
 (setq bbdb-user-mail-names
       (regexp-opt '("swfiua@gmail.com"
-                    "john.catlover@gmail.com")))
+                    "john@details.bm")))
 
 ;;cycling while completing email addresses
 (setq bbdb-complete-name-allow-cycling t)

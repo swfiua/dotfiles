@@ -17,8 +17,3 @@ SCREENDIR=$HOME/.screen
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-   source /usr/local/bin/virtualenvwrapper.sh
-elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
-    source /usr/bin/virtualenvwrapper.sh
-fi
