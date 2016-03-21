@@ -129,5 +129,10 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH:~/devel/scripts"
+
+# add anaconda python folder
+export PATH=$PATH:"~/AppData/Local/Continuum/Anaconda3/"
+export PATH=$PATH:"~/AppData/Local/Continuum/Anaconda3/Scripts"
+export PATH=$PATH:"~/tools/graphviz/bin"
 alias aa=ack-grep
 alias pac="sudo pacman -S"

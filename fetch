@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Some computers don't do soft links. So run fetch prior to checking in changes
+
+targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .emacs.d .xinitrc .gnus.el .Xdefaults .conkyrc"
+
+for target in $targets
+do
+    cp ~/$target  ~/dotfiles
+done
