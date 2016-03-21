@@ -2,9 +2,15 @@
 
 # Some computers don't do soft links. So run fetch prior to checking in changes
 
-targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .emacs.d .xinitrc .gnus.el .Xdefaults .conkyrc"
+targets=".inputrc .bashrc .bash_profile .bash_logout .all_shells .xinitrc .gnus.el .Xdefaults .conkyrc"
 
 for target in $targets
 do
     cp ~/$target  ~/dotfiles
+done
+
+for target in ~/dotfiles/.emacs.d/*.el
+do
+    cp ${target/dotfiles\//} $target
+
 done
