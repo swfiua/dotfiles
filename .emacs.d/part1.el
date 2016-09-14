@@ -33,7 +33,7 @@
 (require 'rst)
 
 ;;(require 'twittering-mode)
-(require 'multiple-cursors)
+;;(require 'multiple-cursors)
 
 (setq default-frame-alist '(
 			    ;; (font . "Bitstream Vera Sans Mono-9") 

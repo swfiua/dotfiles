@@ -127,7 +127,8 @@ function ep
 # magic to put magic in the xterm title
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
-### Added by the Heroku Toolbelt
-export PATH="$PATH:~/.local/bin"
+# expand ~ in case we are in sh
+eval homedir=~
+export PATH="$PATH:$homedir/.local/bin"
 alias aa=ack-grep
 alias pac="sudo pacman -S"
