@@ -132,3 +132,5 @@ eval homedir=~
 export PATH="$PATH:$homedir/.local/bin"
 alias aa=ack-grep
 alias pac="sudo pacman -S"
+
+alias py="python3.6"
