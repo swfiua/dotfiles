@@ -134,3 +134,4 @@ alias aa=ack-grep
 alias pac="sudo pacman -S"
 
 alias py="python3.6"
+alias pippy="pip3.6"
