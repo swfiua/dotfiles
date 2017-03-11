@@ -138,3 +138,11 @@ PY=3.6
 alias pie="python$PY"
 alias pop="pip$PY"
 
+function karma
+{
+
+    echo $1
+    module=karmapi.$1 
+    pie -m $module
+}
+
