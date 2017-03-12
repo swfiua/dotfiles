@@ -141,8 +141,7 @@ alias pop="pip$PY"
 function karma
 {
 
-    echo $1
-    module=karmapi.$1 
+    module=karmapi.$*
     pie -m $module
 }
 
