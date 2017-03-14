@@ -137,6 +137,7 @@ PY=3.6
 
 alias pie="python$PY"
 alias pop="pip$PY"
+alias eric="idle$PY"
 
 function karma
 {
