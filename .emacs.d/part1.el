@@ -34,6 +34,7 @@
 
 ;;(require 'twittering-mode)
 ;;(require 'multiple-cursors)
+(set-face-attribute 'default nil :height 160)
 
 (setq default-frame-alist '(
 			    ;; (font . "Bitstream Vera Sans Mono-9") 
