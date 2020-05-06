@@ -215,3 +215,6 @@
 	     (local-set-key (kbd "C-c n") 'ein:worksheet-goto-next-input)
 	     ))
 
+(setq visible-bell t)
+
+(setq ring-bell-function 'ignore)
