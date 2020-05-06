@@ -133,7 +133,7 @@ export PATH="$PATH:$homedir/.local/bin"
 alias aa=ack-grep
 alias pac="sudo pacman -S"
 
-PY=3.7
+PY=3.8
 
 alias pie="python$PY"
 alias pop="pip$PY"

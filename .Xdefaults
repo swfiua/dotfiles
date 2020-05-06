@@ -4,7 +4,7 @@ xterm*cursorBlink:      false
 xterm*faceName: Monospace
 xterm*cursorOffTime:    300
 xterm*metaSendsEscape:  true
-xterm*faceSize: 12
+xterm*faceSize: 16
 xterm*Background:     #000000
 xterm*title:    Terminal
 xterm*cursorOnTime:     300
@@ -14,7 +14,7 @@ xterm*geometry: 110x31
 xterm*cursorUnderLine:  true
 Xft.antialias: 1
 Xft.autohint: 0
-Xft.dpi: 96
+;;Xft.dpi: 96
 Xft.hinting: 1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault

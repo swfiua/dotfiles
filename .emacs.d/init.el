@@ -1,6 +1,13 @@
 ;;(setq debug-on-error t)
 
 ;; load part 1 of initialisation
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (load "~/.emacs.d/part1.el")
 
 ;; bbdb init
@@ -48,6 +55,9 @@
  '(org-agenda-files
    (quote
     ("~/personal/hols.org" "~/todo.org" "~/Devel/TODO/travel.org")))
+ '(package-selected-packages
+   (quote
+    (w3m w3 python-mode python-environment magit lua-mode gh epc ein-mumamo direx bbdb2erc bbdb-vcard bbdb-ext)))
  '(py-indent-offset 4)
  '(scroll-bar-mode (quote right))
  '(tool-bar-mode nil nil (tool-bar))

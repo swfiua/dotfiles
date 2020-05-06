@@ -11,9 +11,9 @@
 (setq package-list '(git-commit 
       lua-mode magit gh
       python-mode bbdb-ext bbdb bbdb-vcard bbdb
-      bbdb2erc  ein-mumamo ein request websocket ipython
+      bbdb2erc  ein-mumamo ein request websocket
       direx popup python-environment deferred epc ctable
-      concurrent  pyflakes python-pep8 w3 w3m))
+      concurrent w3 w3m))
 
 (package-initialize)
 
@@ -34,10 +34,10 @@
 
 ;;(require 'twittering-mode)
 ;;(require 'multiple-cursors)
-(set-face-attribute 'default nil :height 160)
+;;(set-face-attribute 'default nil :height 160)
 
 (setq default-frame-alist '(
-			    ;; (font . "Bitstream Vera Sans Mono-9") 
+			    ;;(font . "Bitstream Vera Sans Mono-9") 
 			    (scroll-bar-mode . right)))
 
 
