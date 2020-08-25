@@ -10,9 +10,6 @@
 
 (load "~/.emacs.d/part1.el")
 
-;; bbdb init
-(load "~/.emacs.d/bbdbinit.el")
-
 ;; load part 2 of initialisation
 (load "~/.emacs.d/part2.el")
 
@@ -32,7 +29,6 @@
  '(desktop-save-mode t)
  '(dired-recursive-deletes t)
  '(display-time-mode t)
- '(ein:complete-on-dot nil)
  '(elfeed-feeds
    (quote
     ("http://blog.raymond.burkholder.net/index.php?/feeds/index.rss2" "http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
@@ -57,7 +53,7 @@
     ("~/personal/hols.org" "~/todo.org" "~/Devel/TODO/travel.org")))
  '(package-selected-packages
    (quote
-    (w3m w3 python-mode python-environment magit lua-mode gh epc ein-mumamo direx bbdb2erc bbdb-vcard bbdb-ext)))
+    (w3m w3 python-mode lua-mode gh epc direx)))
  '(py-indent-offset 4)
  '(scroll-bar-mode (quote right))
  '(tool-bar-mode nil nil (tool-bar))
