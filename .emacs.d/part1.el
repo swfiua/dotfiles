@@ -19,16 +19,12 @@
 
 ;; font-lock mode stuff
 (global-font-lock-mode t)
-(setq font-lock-maximum-decoration
-      '((c-mode . 3) (c++-mode . 3) (tex-mode . 3) (latex-mode . 3)
-	(java-mode . 3)))
 
 ;; fix back-ups to copy if links are involved
 (setq backup-by-copying-when-linked t)
 
 ;; require final newline when file is saved
 (setq require-final-newline t)
-
 
 ;; other goodness
 (require 'hippie-exp)
@@ -39,14 +35,5 @@
 (setq highlight-nonselected-windows nil)
 
 
-(defun my-reverse(&optional arg)
-  (interactive "P")
-  (x-handle-reverse-video (selected-frame) '((reverse . t))))
 
-;;(if (display-graphic-p)
-;;    (my-reverse))
-
-(defun swfiua()
-  (interactive)
-  (setq user-mail-address "swfiua@gmail.com"))
   

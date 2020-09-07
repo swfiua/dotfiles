@@ -131,13 +131,13 @@
 
 
 ;; python mode
-(require 'python-mode)
-(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.tac$" . python-mode) auto-mode-alist))
-(setq interpreter-mode-alist
-      (cons '("python" . python-mode)
-            interpreter-mode-alist))
-(autoload 'python-mode "python" "Python editing mode." t)
+;; (require 'python-mode)
+;; (setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
+;; (setq auto-mode-alist (cons '("\\.tac$" . python-mode) auto-mode-alist))
+;; (setq interpreter-mode-alist
+;;       (cons '("python" . python-mode)
+;;             interpreter-mode-alist))
+;; (autoload 'python-mode "python" "Python editing mode." t)
 
 
 ;;(require 'tramp)
@@ -150,7 +150,7 @@
 ;;		  'autopair-python-triple-quote-action))))
 
 ;; desktop stuff
-(setq safe-local-variable-values (quote ((py-indent-offset . 4))))
+;; (setq safe-local-variable-values (quote ((py-indent-offset . 4))))
 (load "desktop")
 
 ;; don't save .log, ftp, tags or RMAIL files (RMAIL seems to lock things up
@@ -183,14 +183,6 @@
 (setq ispell-dictionary "british")
 
 (require 'nnir)
-
-(add-to-list 'gnus-secondary-select-methods '(nnimap "gmail"
-				 (nnimap-stream ssl)
- 				 (nnimap-address "imap.gmail.com")
- 				 (nnimap-server-port 993)
- 				 (nnir-search-engine imap)))
-
-
 
 (setq visible-bell t)
 

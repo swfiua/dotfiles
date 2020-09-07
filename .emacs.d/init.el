@@ -29,36 +29,14 @@
  '(desktop-save-mode t)
  '(dired-recursive-deletes t)
  '(display-time-mode t)
- '(elfeed-feeds
-   (quote
-    ("http://blog.raymond.burkholder.net/index.php?/feeds/index.rss2" "http://www.theguardian.com/uk/rss" "http://www.theguardian.com/uk/rss\"" "http://openbermuda.org/80days/rss.xml" "https://bermudaweather.wordpress.com/feed/")))
- '(flymake-allowed-file-name-masks
-   (quote
-    (("\\.py\\'" flymake-pyflakes-init)
-     ("\\.xml\\'" flymake-xml-init)
-     ("\\.html?\\'" flymake-xml-init)
-     ("\\.cs\\'" flymake-simple-make-init)
-     ("\\.p[ml]\\'" flymake-perl-init)
-     ("\\.php[345]?\\'" flymake-php-init)
-     ("\\.java\\'" flymake-simple-make-java-init flymake-simple-java-cleanup)
-     ("[0-9]+\\.tex\\'" flymake-master-tex-init flymake-master-cleanup)
-     ("\\.idl\\'" flymake-simple-make-init))))
  '(global-font-lock-mode t nil (font-lock))
  '(indent-tabs-mode nil)
  '(latex-run-command "pdflatex")
  '(midnight-mode t nil (midnight))
- '(mm-text-html-renderer (quote w3m))
- '(org-agenda-files
-   (quote
-    ("~/personal/hols.org" "~/todo.org" "~/Devel/TODO/travel.org")))
- '(package-selected-packages
-   (quote
-    (w3m w3 python-mode lua-mode gh epc direx)))
- '(py-indent-offset 4)
  '(scroll-bar-mode (quote right))
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
- '(vc-handled-backends (quote (Bzr RCS CVS SVN SCCS Git Hg Mtn Arch))))
+ '(vc-handled-backends (quote (Git))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
